@@ -1,0 +1,35 @@
+<div class="box" *ngIf='items.length > 0'>
+  <h1>Listado</h1>
+  <input class="input" type="text" name="filterPost" placeholder="Buscar.." [(ngModel)]="filterPost">
+  <div class="item" *ngFor="let item of items | filter: filterPost ">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Telefono</th>
+        <th>Fecha Nacimiento</th>
+        <th>Calle</th>
+        <th>Numero</th>
+        <th>Comuna</th>
+        <th>Activo</th>
+      </tr>
+      <tr routerLink="details">
+        <td> {{ item.id }}</td>
+        <td> {{ item.nombre }}</td>
+        <td> {{ item.apellido }}</td>
+        <td> {{ item.telefono }}</td>
+        <td> {{ item.fechaNacimiento }}</td>
+        <td> {{ item.direccion.calle }}</td>
+        <td> {{ item.direccion.numero }}</td>
+        <td> {{ item.direccion.comuna }}</td>
+        <td> {{ item.activo }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!--
+<div *ngIf="!check()">
+
+</div> -->

@@ -1,0 +1,20 @@
+<div class="box" *ngIf='items.length > 0'>
+  <h1>Listado</h1>
+  <input class="input" type="text" name="filterPost" placeholder="Buscar por nombre.." [(ngModel)]="filterPost">
+  <div class="item" *ngFor="let item of items">
+    <table>
+
+      {{ item.id }}
+      {{ item.nombre }}
+      {{ item.apellido }}
+      {{ item.telefono }}
+      {{ item.fechaNacimiento }}
+      {{ item.direccion.calle }}
+      {{ item.direccion.numero }}
+      {{ item.direccion.comuna }}
+      {{ item.activo }}
+
+    </table>
+  </div>
+</div>
+<router-outlet></router-outlet>

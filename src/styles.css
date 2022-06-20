@@ -1,0 +1,126 @@
+html {
+  background-color: #2196F3;
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+  background: url(/assets/bg.jpg), #2196F3;
+  background: url(/assets/bg.jpg), -webkit-gradient(linear, right top, left top, from(#2196F3), to(#009688));
+  background: url(/assets/bg.jpg), linear-gradient(to left, #2196F3, #009688)
+}
+
+h1 {
+  color: black;
+  font-family: 'Trocchi', serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px;
+  text-align: center;
+}
+
+.box {
+  max-width: 60%;
+  margin: 50px auto;
+  background: #CDC2AE;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: #3F51B5;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+p,
+a {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+  text-decoration: none;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #3F51B5;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-width: 0;
+}
+
+.buttonRed {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: red;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 40%;
+}
+
+input[type="text"]:focus {
+  text-align: center;
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #3F51B5;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+mat-header-cell,
+mat-cell {
+  justify-content: center;
+}
+
+td,
+th {
+  border: 1px solid #000;
+  border-style: dotted;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.mat-sort-header-container {
+  justify-content: center !important;
+}
